@@ -7,7 +7,7 @@ const Token = () => (
       <Layout.Header>
         <Banner
           type='warning'
-          description='将 OpenAI API 基础地址 https://api.openai.com 替换为 https://opus.vmuu.link ，复制下面的密钥或点击聊天即可使用'
+          description='将 OpenAI API 基础地址 https://api.openai.com 替换为 https://api.gogoai.cloud ，复制下面的密钥或点击聊天即可使用'
         />
       </Layout.Header>
       <Layout.Content>
