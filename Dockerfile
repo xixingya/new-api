@@ -38,6 +38,6 @@ ENV LOG_DIR /logs
 RUN mkdir -p $LOG_DIR
 
 ENTRYPOINT ["/one-api"]
-CMD ["-log-dir", "/logs"]
+CMD ["--log-dir", "/logs"]
 
 
