@@ -30,4 +30,14 @@ RUN apk update \
 COPY --from=builder2 /build/one-api /
 EXPOSE 3000
 WORKDIR /data
+
+# 设置日志目录
+ENV LOG_DIR /logs
+
+# 创建日志目录
+RUN mkdir -p $LOG_DIR
+
 ENTRYPOINT ["/one-api"]
+CMD ["-log-dir", "/logs"]
+
+
